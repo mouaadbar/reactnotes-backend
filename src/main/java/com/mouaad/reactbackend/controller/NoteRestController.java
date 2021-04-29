@@ -24,7 +24,7 @@ public class NoteRestController {
 
 
 
-    @PostMapping("/addNotes")
+    @PostMapping("/addNote")
     public ResponseEntity<Note> createNote(@RequestBody Note note) {
         return new ResponseEntity<Note>(noteRepository.save(note), HttpStatus.CREATED);
     }
