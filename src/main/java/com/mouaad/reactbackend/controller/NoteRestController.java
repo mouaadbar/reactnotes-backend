@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 
-@CrossOrigin(origins = "https://reactnotesbackend.herokuapp.com/api/", maxAge = 3600)
+@CrossOrigin(origins = "https://reactnotesbackend.herokuapp.com/api/")
 public class NoteRestController {
     @Autowired
     NoteRepository noteRepository;
